@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Whatis = ()=>{
     return(
-<div className="flex mt-[70px] relative items-center justify-between w-full max-w-desktop mx-auto px-[120px]">
+<div className="flex mt-[70px] relative items-center justify-between max-mobile:flex-col max-mobile:px-4 w-full max-w-desktop mx-auto max-mobile:px-6 px-[120px]">
         <div className="w-[400px] h-[400px] border p-2 border-[#767676] rounded-[64px]">
           <div className="w-full h-full flex items-center justify-center bg-[#2B2B2B] rounded-[64px] overflow-hidden relative">
             <div className="z-1 w-[361px] h-[326px] absolute top-[-100px] right-[-100px] bg-[#B6A2FF]/23 rounded-full blur-[70px]" />

@@ -32,9 +32,9 @@ const features = [
 
 const Features = () => {
   return (
-    <div className="mt-[88px] mb-[110px] flex relative flex-col items-center w-full max-w-desktop mx-auto px-[120px]">
+    <div className="mt-[88px] mb-[110px] flex relative flex-col items-center w-full max-w-desktop mx-auto px-[120px] max-mobile:px-6">
       <p className="text-[24px] mb-10">مزایا در یک نگاه</p>
-      <div className="w-full flex flex-row-reverse items-center justify-center gap-6">
+      <div className="w-full flex flex-row-reverse items-center justify-center gap-6 max-mobile:flex-col">
         {features.map((feature, index) => (
           <div key={index} className="flex min-h-[324px] flex-col items-start max-w-[300px] bg-[#0E0E0E] p-6 min-w-[324px] rounded-[32px] shadow-[0px_0px_120px_0px_#B1FF6833]">
             <div className="w-12 h-12 rounded-full bg-[#B1FF6829] flex items-center justify-center text-secondary-main [&_svg]:size-6">

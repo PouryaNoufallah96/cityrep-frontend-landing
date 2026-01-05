@@ -4,13 +4,13 @@ const mockFields = ["فیتنس", "یوگا", "رزمی", "دویدن", "دوچ�
 
 const Hero = () => {
     return (
-        <div className="flex relative items-start justify-between min-h-[997px] w-full max-w-desktop mx-auto px-[120px]">
-            <div className="relative z-2 pt-[250px]">
-                <p className="text-[36px] font-medium text-nowrap text-primary-main">دسترسی به فضاهای تمرینی</p>
-                <p className="text-[96px] my-5 leading-[196px] font-bold text-nowrap text-primary-main">در سراسر شهر</p>
-                <p className="text-[36px] font-medium text-nowrap text-secondary-main">بدون وابستگی به یک مکان یا یک سبک تمرین</p>
+        <div className="flex relative items-start justify-between max-mobile:flex-col min-h-[997px] max-mobile:min-h-[650px] w-full max-w-desktop mx-auto max-mobile:px-6 px-[120px]">
+            <div className="relative z-2 pt-[250px] max-mobile:pt-[270px]">
+                <p className="text-[36px] max-mobile:text-[18px] font-medium text-nowrap text-primary-main">دسترسی به فضاهای تمرینی</p>
+                <p className="text-[96px] max-mobile:text-[48px] my-5 leading-[196px] max-mobile:leading-[48px] font-bold text-nowrap text-primary-main">در سراسر شهر</p>
+                <p className="text-[36px] max-mobile:text-[18px] font-medium text-nowrap text-secondary-main">بدون وابستگی به یک مکان یا یک سبک تمرین</p>
             </div>
-            <Image unoptimized loading="eager" src="/images/heroImage.jpg" className="z-1 absolute left-0" width={924} height={777} alt="cityrep" />
+            <Image unoptimized loading="eager" src="/images/heroImage.jpg" className="z-1 absolute left-0 max-mobile:w-full" width={924} height={777} alt="cityrep" />
             <div className="w-full overflow-hidden absolute flex items-center justify-center h-[280px] z-10 -bottom-[0] left-0">
                 <div className="absolute flex items-center justify-center left-[-20px] w-[calc(100%+40px)] h-[74px] bg-primary-800 z-10 rotate-z-[8deg]">
                     {
