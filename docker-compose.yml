@@ -1,0 +1,13 @@
+services:
+  cityrep.ir:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cityrep.com
+    restart: unless-stopped
+    volumes:
+      - "/etc/timezone:/etc/timezone:ro"
+      - "/etc/localtime:/etc/localtime:ro"
+    ports:
+      - "3013:3013"
+
