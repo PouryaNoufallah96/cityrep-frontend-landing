@@ -35,7 +35,7 @@ const Places = () => {
         <div className="w-full bg-white">
             <div className="flex relative flex-col items-center w-full max-w-desktop mx-auto max-mobile:px-6 px-[120px] bg-white py-[60px]">
                 <p className="text-[24px] mb-10 text-primary-600">فضاهای تمرینی تحت پوشش </p>
-                <div className="w-full grid grid-cols-5 gap-5">
+                <div className="w-full grid grid-cols-5 gap-5 max-mobile:grid-cols-1">
                     {places.map((place, index) => (
                         <div key={index}
                             className="flex w-full aspect-[224/328] relative rounded-[16px] items-end justify-center overflow-hidden">
