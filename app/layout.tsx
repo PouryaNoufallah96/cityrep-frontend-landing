@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${iranSans.className} antialiased [direction:rtl]`}
       >
-        <div className="bg-linear-[180deg,_#000000_25.42%,_#2B2B2B_100%] w-full min-h-[100svh]">
+        <div className="bg-linear-[180deg,_#000000_25.42%,_#2B2B2B_100%] w-full h-auto">
           <Header />
         {children}
 

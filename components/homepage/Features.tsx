@@ -32,18 +32,18 @@ const features = [
 
 const Features = () => {
   return (
-    <div className="mt-[88px] mb-[110px] flex mt-[70px] relative flex-col items-center w-full max-w-desktop mx-auto px-[120px]">
+    <div className="mt-[88px] mb-[110px] flex relative flex-col items-center w-full max-w-desktop mx-auto px-[120px]">
       <p className="text-[24px] mb-10">مزایا در یک نگاه</p>
-      <div className="w-full flex items-center justify-center gap-6">
+      <div className="w-full flex flex-row-reverse items-center justify-center gap-6">
         {features.map((feature, index) => (
-          <div key={index} className="flex min-h-[324px] flex-col items-center max-w-[300px] bg-[#0E0E0E] p-8 rounded-[32px] shadow-[0px_0px_120px_0px_#B1FF6833]">
-            <div className="w-12 h-12 rounded-full bg-[#B1FF6829] flex items-center justify-center mb-4 text-secondary-main [&_svg]:size-6">
+          <div key={index} className="flex min-h-[324px] flex-col items-start max-w-[300px] bg-[#0E0E0E] p-6 min-w-[324px] rounded-[32px] shadow-[0px_0px_120px_0px_#B1FF6833]">
+            <div className="w-12 h-12 rounded-full bg-[#B1FF6829] flex items-center justify-center text-secondary-main [&_svg]:size-6">
               {feature.icon}
             </div>
-            <p className="font-bold text-lg mb-4">{feature.title}</p>
+            <p className="font-bold text-lg my-8">{feature.title}</p>
             <ul className="list-disc list-inside">
               {feature.items.map((item, idx) => (
-                <li key={idx} className="mb-2">{item}</li>
+                <li key={idx} className="mb-6 text-sm">{item}</li>
               ))}
             </ul>
           </div>

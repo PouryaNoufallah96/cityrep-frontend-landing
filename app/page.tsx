@@ -1,16 +1,20 @@
 import Features from "@/components/homepage/Features";
 import Hero from "@/components/homepage/Hero";
 import Whatis from "@/components/homepage/Whatis";
-import Image from "next/image";
+import Places from "@/components/homepage/Places";
+import HIW from "@/components/homepage/HIW";
 
 export default function Home() {
-  return (
-    <div className="w-full h-[4000px]">
-      <Hero />
-      <Whatis />
-      <Features />
+    return (
+        <div className="w-full">
+            <Hero/>
+            <Whatis/>
+            <Features/>
+            <Places/>
+            <section className="relative">
+                <HIW/>
+            </section>
 
-
-    </div>
-  );
+        </div>
+    );
 }
