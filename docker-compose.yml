@@ -9,5 +9,5 @@ services:
       - "/etc/timezone:/etc/timezone:ro"
       - "/etc/localtime:/etc/localtime:ro"
     ports:
-      - "3013:3013"
+      - "3000:3000"
 
